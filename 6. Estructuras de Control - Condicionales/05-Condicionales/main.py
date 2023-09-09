@@ -33,3 +33,21 @@ def validaPersona(persona):
     print(persona)
 
 validaPersona(persona)
+
+#ELIF
+dia = int(input("Ingrese el número de la semana: "))
+
+if dia == 1:
+    print("Es lunes")
+elif dia == 2:
+    print("Es Martes")
+elif dia == 3:
+    print("Es Miércoles")
+elif dia == 4:
+    print("Es jueves")
+elif dia == 5:
+    print("Es viernes")
+elif dia == 6:
+    print("Es sábado")
+elif dia == 7:
+    print("Es Domingo")
