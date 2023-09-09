@@ -12,4 +12,22 @@ print("Ahora tengo {}".format(edad))
 edad -=15
 print("Ahora tengo {}".format(edad))
 
-#Operadores de incremento y decremento 
+#Operadores de incremento y decremento year++
+year = 2021
+
+#Incremento 
+
+year = year +1
+year += 1
+print(year)
+
+#Decremento 
+year = year -1 
+year -= 1
+print(year)
+
+#Preincremento
+year = 1 + year 
+
+#Predecremento 
+year = 1 - year
