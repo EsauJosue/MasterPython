@@ -15,3 +15,21 @@ else:
 # > mayor que 
 # <= menor o igual
 # >= mayor o igual 
+
+persona = {
+    "Nombre" : "Esaú",
+    "Apellido" : "Martínez",
+    "Lenguaje" : "Python",
+    "Edad" : edad
+}
+def validaPersona(persona):
+    edad = int(persona["Edad"])
+    apellido = persona["Apellido"]
+    #IFs Anidados
+    if  edad > 18:
+        if apellido == "Martínez":
+            print("La persona tiene {}, por lo tanto es mayor de edad \n y se apellida {}".format(edad,apellido))
+
+    print(persona)
+
+validaPersona(persona)
