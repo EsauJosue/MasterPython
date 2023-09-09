@@ -51,3 +51,10 @@ elif dia == 6:
     print("Es sábado")
 elif dia == 7:
     print("Es Domingo")
+
+#Operadores Lógicos
+
+# and Y
+# or o
+# ! negación
+# not no
