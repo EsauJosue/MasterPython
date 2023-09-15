@@ -11,11 +11,13 @@
 
 # muestraNombres(nombre)
 
-numero = int(input("Ingrese la tabla de multiplicar que desea consultar: "))
+# numero = int(input("Ingrese la tabla de multiplicar que desea consultar: "))
 
 def tabla(numero):
     contador = 0
     for contador in range(1,11):
         print(f"{numero} x {contador} = {numero * contador}")
 
-tabla(numero)
+x = 1
+for x in range(1,10):
+    tabla(x)
