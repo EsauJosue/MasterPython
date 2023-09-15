@@ -5,8 +5,17 @@
 #     Bloque de instrucciones
 
 # Ejemplo 1
-nombre = input("Ingrese un nombre: ")
-def muestraNombres(nombre):
-    print(f"El nombre es: {nombre}")
+# nombre = input("Ingrese un nombre: ")
+# def muestraNombres(nombre):
+#     print(f"El nombre es: {nombre}")
 
-muestraNombres(nombre)
+# muestraNombres(nombre)
+
+numero = int(input("Ingrese la tabla de multiplicar que desea consultar: "))
+
+def tabla(numero):
+    contador = 0
+    for contador in range(1,11):
+        print(f"{numero} x {contador} = {numero * contador}")
+
+tabla(numero)
