@@ -21,3 +21,18 @@ def tabla(numero):
 x = 1
 for x in range(1,10):
     tabla(x)
+
+def getEmpleado(nombre, dni = None):
+    print("Empleado")
+    print(f"Nombre: {nombre}")
+    if dni != None:
+        print(f"DNI: {dni}")
+
+getEmpleado("Josue Martinez")
+
+# ejercicio 5
+
+def saludame(nombre): 
+    saludo = f"Hola, saludos {nombre}"
+    return saludo
+print(saludame("Josué"))
