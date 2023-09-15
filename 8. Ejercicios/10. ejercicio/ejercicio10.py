@@ -15,4 +15,3 @@ for contador in range(1,16):
 
 print("Los alumnos reprobados son: {}".format(reprobados))
 print("Los alumnos aprobados son: {}".format(aprobados))          
-
