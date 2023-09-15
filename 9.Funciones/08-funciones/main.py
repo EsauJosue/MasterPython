@@ -36,3 +36,25 @@ def saludame(nombre):
     saludo = f"Hola, saludos {nombre}"
     return saludo
 print(saludame("Josué"))
+
+# ejercicio 6 
+
+def getNom(nombre):
+    texto = f"El nombre es: {nombre}"
+    return texto
+
+
+def getApellido(apellido):
+    texto = f"El apellido es: {apellido}"
+    return texto
+
+
+
+def devuelveTodo(nombre,apellido = None):
+    if apellido == None:
+        texto = f"{getNom(nombre)}" 
+    else:
+        texto = f"{getNom(nombre)} \n {getApellido(apellido)}" 
+    return texto
+
+print(devuelveTodo("Josue"))
