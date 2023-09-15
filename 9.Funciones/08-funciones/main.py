@@ -5,13 +5,8 @@
 #     Bloque de instrucciones
 
 # Ejemplo 1
+nombre = input("Ingrese un nombre: ")
+def muestraNombres(nombre):
+    print(f"El nombre es: {nombre}")
 
-def muestraNombres():
-    print("Josué")
-    print("Esaú")
-    print("Juan")
-    print("Francisco")
-    print("Nestor")
-    print("\n")
-
-muestraNombres()
+muestraNombres(nombre)
