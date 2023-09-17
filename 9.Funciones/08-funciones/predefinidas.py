@@ -28,3 +28,8 @@ if not isinstance(nombre, float):
 #Encontrar caractéres
 frase = "La vida es bella"
 print(f"En la frase '{frase}', la palabra 'vida' se encuentra en el carácter: {frase.find('vida')}")
+
+#Reemplazar palabras en un string 
+
+nueva_frase = frase.replace("vida", "moto")
+print(nueva_frase)
