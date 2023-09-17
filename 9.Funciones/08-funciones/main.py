@@ -58,3 +58,8 @@ def devuelveTodo(nombre,apellido = None):
     return texto
 
 print(devuelveTodo("Josue"))
+
+# Función Lambda
+
+get_year = lambda year: f"El año es: {year}" #year es el parámetro 
+print(get_year(2023))
