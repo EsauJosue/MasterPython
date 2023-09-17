@@ -33,3 +33,9 @@ print(f"En la frase '{frase}', la palabra 'vida' se encuentra en el carácter: {
 
 nueva_frase = frase.replace("vida", "moto")
 print(nueva_frase)
+
+#Mayusculas y Minusculas
+
+print(nombre)
+print(nombre.lower())
+print(nombre.upper())
