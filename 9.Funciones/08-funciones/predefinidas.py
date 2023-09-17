@@ -15,3 +15,14 @@ if len(texto) <= 0: #Con la función len se pueden contar el número de caracter
     print("La variable esta vacia")
 else: 
     print("La variable tiene contenido: {} carácteres".format(len(texto)))
+#Detectar tipado
+comprobar = isinstance(nombre, str)
+if comprobar:
+    print("Esa variable es un string")
+else:
+    print("No es una cadena de texto")
+
+if not isinstance(nombre, float):
+    print("La variable no es un número con decimales")
+
+
