@@ -26,3 +26,8 @@ print(variada)
 #Se pueden cambiar los nombres de cualquier elemento de una lista reasignando el valor: 
 peliculas[1] = "Gran Torino"
 print(peliculas)
+
+#Añadir elemento a lista
+cantantes.append("Kase O")
+cantantes.append("Natos y Waor")
+print(cantantes[0:])
