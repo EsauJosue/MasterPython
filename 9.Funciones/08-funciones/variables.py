@@ -16,5 +16,12 @@ def HolaMundo():
     frase =  "Hola Mundo!!"
     print("Dentro de la función")
     print(frase)
+    #Se utiliza la palabra reservada global para convertir una variable local en global.
+    
+    global pagina  
+    pagina = "jmcsoluciones.com"
+    print("Dentro: ",pagina)
+
 
 HolaMundo()
+print(f"Fuera: {pagina}")
