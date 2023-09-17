@@ -33,5 +33,14 @@ cantantes.append("Natos y Waor")
 print(cantantes[0:])
 
 #Recurriendo peliculas
+print("\n *************LISTADO DE PELICULAS *****************")
+
+nueva_pelicula = ""
+while nueva_pelicula != "parar": 
+    nueva_pelicula = input("Ingrese el nombre de la nueva pelicula: ")
+    if nueva_pelicula != "parar":
+        peliculas.append(nueva_pelicula)
+
 for pelicula in peliculas:
-    print(pelicula)
+    #Con el método index se puede imprimir el indice del elemento de la lista
+    print(f"{peliculas.index(pelicula)+1}. {pelicula}")
