@@ -25,4 +25,6 @@ else:
 if not isinstance(nombre, float):
     print("La variable no es un número con decimales")
 
-
+#Encontrar caractéres
+frase = "La vida es bella"
+print(f"En la frase '{frase}', la palabra 'vida' se encuentra en el carácter: {frase.find('vida')}")
