@@ -31,3 +31,7 @@ print(peliculas)
 cantantes.append("Kase O")
 cantantes.append("Natos y Waor")
 print(cantantes[0:])
+
+#Recurriendo peliculas
+for pelicula in peliculas:
+    print(pelicula)
