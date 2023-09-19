@@ -6,9 +6,14 @@ Ejercicio 1. Hacer un programa que tenga una lista de 8 numeros enteros y haga l
 """
 lista = [3,7,8,3,9,2,6,5]
 
-for elemento in lista:
-    print(elemento)
 
 lista.sort()
 print(lista)
 print(f"El tamaño de la lista es de: {len(lista)} elementos")
+
+def recorreLista(lista):
+    for elemento in lista:
+        print(elemento)
+
+recorreLista(lista)
+
