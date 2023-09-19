@@ -12,3 +12,30 @@ persona = {
 print(type(persona))
 print(persona["apellidos"]) # Para poder imprimir a un elemento del diccionario es necesario agregar el nombre de la clave
 print(persona["Web"])
+
+#Lista con diccionarios
+
+contactos = [
+    {
+        'nombre' : 'Antonio',
+        'email' : 'antonio@gmail.com'
+    },
+      {
+        'nombre' : 'Luis',
+        'email' : 'luis@gmail.com'
+    },
+      {
+        'nombre' : 'Salvador',
+        'email' : 'salvador@gmail.com'
+    },
+]
+print(contactos)
+print(contactos[0]['nombre'])
+contactos[0]['nombre'] = 'Josue'
+print(contactos)
+
+# Recorriendo la lista
+for contacto in contactos: 
+    print(f"Nombre del contacto: {contacto['nombre']}")
+    print(f"Email del contacto: {contacto['email']}")
+    print("-------------------------")
