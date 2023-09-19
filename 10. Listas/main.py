@@ -63,4 +63,8 @@ contactos = [
 
     ]
 ]
-print(contactos[0][0:])
+# print(contactos[0][0:])
+#Recorriendo una lista multidimencional con for
+for contacto in contactos:
+    for elemento in contacto:
+        print(elemento)
