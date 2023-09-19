@@ -22,7 +22,9 @@ recorreLista(lista)
 
 dato = input("Que número quieres buscar en en la lista: ")
 
-if int(dato) in lista:
-    print("El número si se encuentra en la lista")
-else:
-    print("El número no se encuentra en la lista")
+comprobar = isinstance(dato,int)
+if comprobar:
+    if int(dato) in lista:
+        print("El número si se encuentra en la lista")
+    else:
+        print("El número no se encuentra en la lista")

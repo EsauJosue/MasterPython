@@ -1,0 +1,1 @@
+CONSTANTE = "En el módulo Segundo"
