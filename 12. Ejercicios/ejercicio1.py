@@ -4,7 +4,7 @@ Ejercicio 1. Hacer un programa que tenga una lista de 8 numeros enteros y haga l
 - Ordenarla y mostrarla
 - Mostrar su longitud
 """
-lista = [3,7,8,3,9,2,6,5]
+lista = [13,75,80,33,49,90,6,78]
 
 
 lista.sort()
