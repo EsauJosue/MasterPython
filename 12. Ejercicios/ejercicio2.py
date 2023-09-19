@@ -2,9 +2,15 @@
 #Usar while y for 
 
 coleccion = []
+contador = 0
 
-for contador in range(0,120):
-    coleccion.append(f"elemento-{contador}")
+# for contador in range(0,120):
+#     coleccion.append(f"elemento-{contador}")
+#     print("Mostrando el: " + coleccion[contador])
+
+# print(coleccion)
+
+while contador <= 120:
+    coleccion.append(f"Elemento-{contador}")
     print("Mostrando el: " + coleccion[contador])
-
-print(coleccion)
+    contador += 1
