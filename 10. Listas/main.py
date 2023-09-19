@@ -44,3 +44,23 @@ while nueva_pelicula != "parar":
 for pelicula in peliculas:
     #Con el método index se puede imprimir el indice del elemento de la lista
     print(f"{peliculas.index(pelicula)+1}. {pelicula}")
+
+#listas multidimencionales
+
+print("\n Lista de contactos")
+contactos = [
+    [
+        'Antonio',
+        'antonio@gmail.com'
+    ],
+    [
+        'Ricardo',
+        'ricardo@gmail.com'
+    ],
+    [
+        'Esaú',
+        'esau@gmail.com'
+
+    ]
+]
+print(contactos[0][0:])
