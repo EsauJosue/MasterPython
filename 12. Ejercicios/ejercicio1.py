@@ -3,6 +3,7 @@ Ejercicio 1. Hacer un programa que tenga una lista de 8 numeros enteros y haga l
 -Recorrer una lista y mostrarla 
 - Ordenarla y mostrarla
 - Mostrar su longitud
+- Buscar un elemento
 """
 lista = [13,75,80,33,49,90,6,78]
 
@@ -17,3 +18,11 @@ def recorreLista(lista):
 
 recorreLista(lista)
 
+# Buscando un elemento
+
+dato = input("Que número quieres buscar en en la lista: ")
+
+if int(dato) in lista:
+    print("El número si se encuentra en la lista")
+else:
+    print("El número no se encuentra en la lista")
