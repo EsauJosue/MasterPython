@@ -1,5 +1,5 @@
 from io import open #Este módulo sirve para poder crear archivos
-import pathlib #Este módulo sirve para usar rutas relativas sin problemas en cualquier proyecto
+import pathlib #Este módulo sirve para usar rutas absolutas sin problemas en cualquier proyecto
 import shutil #Este módulo se usa para copiar archivos 
 import os #Sirve para eliminar archivos
 
