@@ -1,5 +1,6 @@
-from io import open
-import pathlib
+from io import open #Este módulo sirve para poder crear archivos
+import pathlib #Este módulo sirve para usar rutas relativas sin problemas en cualquier proyecto
+import shutil #Este módulo se usa para copiar archivos 
 
 # Abrir archivo
 ruta = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
@@ -27,3 +28,13 @@ archivo_lectura.close()
 
 for elemento in lista:
     print("- "+elemento.upper())
+"""
+#Copiar archivo
+ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
+ruta_nueva = str(pathlib.Path().absolute()) + "/fichero_copiado.txt"
+ruta_relativa = str(pathlib.Path().absolute()) + "/../7.Bucles/fichero_copiado3.txt"
+
+shutil.copyfile(ruta_original, ruta_nueva)
+"""
+
+# Mover
