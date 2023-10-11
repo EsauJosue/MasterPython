@@ -1,6 +1,7 @@
 from io import open #Este módulo sirve para poder crear archivos
 import pathlib #Este módulo sirve para usar rutas relativas sin problemas en cualquier proyecto
 import shutil #Este módulo se usa para copiar archivos 
+import os #Sirve para eliminar archivos
 
 # Abrir archivo
 ruta = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
@@ -38,3 +39,28 @@ shutil.copyfile(ruta_original, ruta_nueva)
 """
 
 # Mover
+""" ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
+ruta_nueva = str(pathlib.Path().absolute()) + "/fichero_copiado.txt"
+
+shutil.move(ruta_original,ruta_nueva) """
+
+# Eliminar
+
+ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
+os.remove(ruta_original)
+
+# Comprobar si existe 
+
+import os.path
+
+print(os.path.abspath("../"))
+print(os.path.abspath("./"))
+
+#Validación si existe 
+
+ruta_comprobar = os.path.abspath("./fichero_copiado.txt")
+
+if os.path.isfile(ruta_comprobar):
+    print("El archivo existe")
+else:
+    print("El archivo no existe")
