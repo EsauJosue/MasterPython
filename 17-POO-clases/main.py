@@ -20,6 +20,14 @@ class Coche:
     
     def getVelocidad(self):
         return self.velocidad
+    
+    #Usando métodos con getter y setter
+
+    def setColor(self, color):
+        self.color = color
+    
+    def getColor(self):
+        return self.color
 
 # fin definición clase
 
@@ -30,3 +38,6 @@ print(coche.velocidad)
 
 coche.acelerar()
 print(coche.velocidad)
+
+coche.setColor("Verde cocodrilo")
+print(f"El color del coche ahora es: {coche.getColor()}")
