@@ -35,9 +35,11 @@ class Coche:
 
 coche = Coche()
 print(coche.velocidad)
-
 coche.acelerar()
 print(coche.velocidad)
-
 coche.setColor("Verde cocodrilo")
 print(f"El color del coche ahora es: {coche.getColor()}")
+
+coche2 = Coche()
+print(f"Color del coche 2: {coche2.color}")
+print(f"Color del coche 1: {coche.color}")
