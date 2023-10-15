@@ -6,5 +6,4 @@ coche2 = Coche("Amarillo","Nissan","Platina",500,600,4)
 # print(coche1.getInfo())
 # print(coche2.getInfo())
 
-
-print()
+print(type(coche1))
