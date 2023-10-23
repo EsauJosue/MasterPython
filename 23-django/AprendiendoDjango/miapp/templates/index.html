@@ -1,0 +1,31 @@
+{% extends 'layout.html'%}
+{% block title%} {{title}} {% endblock%}
+{% block content%}
+{% comment %} Este es un comentario {% endcomment %}
+<h1>Inicio</h1>
+<p>Años hasta el 2050:</p>
+{{mi_variable}}
+
+<p class="parrafo"> Estos son los lenguajes: <strong> {{lenguajes}} </strong></p>
+{% if nombre %}
+    <p>{{nombre}}</p>
+{% else %}
+    <strong>No existe el nombre</strong>
+{% endif %}
+
+<ul>
+    {% for lenguaje in lenguajes %}
+        <li>{{lenguaje}} {{forloop.first}} {{forloop.last}} {{forloop.counter}} {{forloop.counter0}} {{forloop.revcounter}}</li>
+        {% comment %} forloop.first valida si el elemento es el primero en la lista {% endcomment %}
+        {% comment %} forloop.last valida si el elemento es el último de la lista {% endcomment %}
+        {% comment %} forloop.counter devuelve el número del elemento de la lista  {% endcomment %}
+        {% comment %} forloop.counter0 devuelve el número del elemento de la lista empezando a contar desde el 0 {% endcomment %}
+        {% comment %} forloop.revcounter devuelve el número del elemento de la lista  fr manera inversa{% endcomment %}
+
+
+    {% empty %}
+        <p> No hay lenguajes que mostrar </p>
+    {% endfor %}
+</ul>
+{% endblock %}
+

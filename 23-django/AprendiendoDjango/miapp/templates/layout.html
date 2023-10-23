@@ -1,0 +1,28 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0099ff" />
+    <title>
+        {% block title%}
+        <!-- título de cada página -->
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <h1>Sito Web con Django | Josué Martínez</h1>
+    {% include 'header.html'%}
+    <div id="content">
+        {% block content %}
+            <strong>Contenido del bloque original en layout</strong>
+        {% endblock %}
+    </div>
+    <footer>
+        <p>Mater en python &copy; Josué Martínez JMC {% now "D/M/Y"%}</p>
+
+    </footer>
+  </body>
+</html>
