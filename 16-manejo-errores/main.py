@@ -1,27 +1,27 @@
 
-# try:
-#     nombre = input("Ingrese su nombre: ")
-#     if len(nombre) > 1:
-#         mi_nombre = f"El nombre es {nombre}"
-#     print(mi_nombre)
-# except:
-#     print("Ingrese bien su nombre")
-# else: 
-#     print("Todo OK")
-# finally: 
-#     print("Fin de la iteración")
+try:
+    nombre = input("Ingrese su nombre: ")
+    if len(nombre) > 1:
+        mi_nombre = f"El nombre es {nombre}"
+    print(mi_nombre)
+except:
+    print("Ingrese bien su nombre")
+else: 
+    print("Todo OK")
+finally: 
+    print("Fin de la iteración")
 
 # Multiples excepciones
-# import math
-# try:
-#     numero = int(input("Número para elevarlo al cuadrado: "))
-#     print("El cuadrado es: {}".format(str(math.pow(numero,2))))
-# except TypeError:
-#     print("Error en el tipo de dato")
-# # except ValueError: 
-# #     print("Error en el valor ingresado")
-# except Exception as e: 
-#     print("Ha ocurrido un error: {}".format(type(e).__name__))
+import math
+try:
+    numero = int(input("Número para elevarlo al cuadrado: "))
+    print("El cuadrado es: {}".format(str(math.pow(numero,2))))
+except TypeError:
+    print("Error en el tipo de dato")
+# except ValueError: 
+#     print("Error en el valor ingresado")
+except Exception as e: 
+    print("Ha ocurrido un error: {}".format(type(e).__name__))
 
 #Excepciones Personalizadas o lanzar excepciones
 

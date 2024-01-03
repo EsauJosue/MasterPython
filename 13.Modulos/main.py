@@ -2,6 +2,7 @@ import mimodulo
 import datetime
 import math
 import random
+# from mimodulo import * Con este tipo de import, se pueden importar todas las funciones que contenga el módulo.
  #Para importar un modulo es necesario utilizar la palabra import
 print(mimodulo.holaMundo("Josue Martinez"))
 

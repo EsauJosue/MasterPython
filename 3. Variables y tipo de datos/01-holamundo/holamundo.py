@@ -1,4 +1,4 @@
 # Comentarios
 print('hola Mundo !!')
-type('Hola')
+print(type('Hola'))
 

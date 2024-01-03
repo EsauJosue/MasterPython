@@ -18,17 +18,17 @@ archivo_lectura = open(ruta, "r")
 
 # Leer contenido
 
-# contenido = archivo_lectura.read()
-# print(contenido)
+contenido = archivo_lectura.read()
+print(contenido)
 
 # Leer contenido y guardar en lista
 lista = archivo_lectura.readlines()
-archivo_lectura.close()
+# archivo_lectura.close()
 
-# print(lista)
+print(lista)
 
-for elemento in lista:
-    print("- "+elemento.upper())
+# for elemento in lista:
+    # print("- "+elemento.upper())
 """
 #Copiar archivo
 ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
@@ -46,21 +46,21 @@ shutil.move(ruta_original,ruta_nueva) """
 
 # Eliminar
 
-ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
-os.remove(ruta_original)
+# ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
+# os.remove(ruta_original)
 
 # Comprobar si existe 
 
-import os.path
+# import os.path
 
-print(os.path.abspath("../"))
-print(os.path.abspath("./"))
+# print(os.path.abspath("../"))
+# print(os.path.abspath("./"))
 
 #Validación si existe 
 
-ruta_comprobar = os.path.abspath("./fichero_copiado.txt")
+# ruta_comprobar = os.path.abspath("./fichero_copiado.txt")
 
-if os.path.isfile(ruta_comprobar):
-    print("El archivo existe")
-else:
-    print("El archivo no existe")
+# if os.path.isfile(ruta_comprobar):
+#     print("El archivo existe")
+# else:
+#     print("El archivo no existe")

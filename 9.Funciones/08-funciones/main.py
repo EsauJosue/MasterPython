@@ -22,6 +22,8 @@ x = 1
 for x in range(1,10):
     tabla(x)
 
+# Parámetros opcionales. 
+    
 def getEmpleado(nombre, dni = None):
     print("Empleado")
     print(f"Nombre: {nombre}")
